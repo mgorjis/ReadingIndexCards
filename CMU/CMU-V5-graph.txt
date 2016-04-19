@@ -1,0 +1,590 @@
+graph = 
+
+{
+
+# Entities schema
+# (<type>:
+#  (<name>|(<name>, <location>+, <node-type>+), 
+#   ...),
+#  ...)
+
+('Entities':
+{
+'Organelle':
+(('Mito', 'in_cell'),         # mitochondria
+ ('ER', 'in_cell'),           # endoplasmic reticulum (protein (rough), lipid (smooth))
+ ('Nucleus', 'in_cell')
+ ('Exosomes', 'cell_wall')),  # cell-derived vesicles (in possibly all bio fluids)
+
+'Cell_Death':
+('Apoptosis',
+ 'Necroptosis',
+ 'Cell_Death'),
+
+'Cell_Process':
+('Cell_Survival',
+ ('Glycolysis', 'in_cell')
+ ('PPP', 'in_cell'),
+ ('Growth/Protein_Synthesis', 'in_cell'),
+ ('Cell_Cell_Contacts', 'cell_wall'),
+ ('Immune_Signaling', 'cell_wall'),
+ ('TCA', 'in_Mito'),
+ ('OXPHOS', 'in_Mito'),
+ ('DNA/RNA_Synthesis', 'in_nulceus')),
+
+'Cancer':
+('Autophagy', 'Acidic_Microenvironment', 'DNA_DSB', 'Proliferation'),
+
+'Receptor':
+# outer surface of a cell membrane, communication between cell and outside world
+(('IFNGR', 'cell_wall'), 
+ ('EGFR', 'cell_wall'),
+ ('PDGFR', 'cell_wall'), 
+ ('FGFR', 'cell_wall'),
+ ('VEGFR', 'cell_wall'),
+ ('IGFR', 'cell_wall'),
+ ('TNFR', 'cell_wall'),
+ ('RAGE', 'cell_wall'),
+ ('TGFbetaR','cell_wall')),
+
+'Unknown':  
+# unknown types, likely distinguished by graph node type (3rd argument)
+(('INTEGRINS', 'cell_wall', 'orange_square'), 
+ ('focal_adhesions', 'cell_wall', 'orange_oval'),
+ ('ADAM', 'cell_wall', 'light_blue_oval'),
+ ('STAT', 'in_nucleus', 'yellow_oval'),
+ ('P53', 'in_nucleus', 'yellow_oval'),
+ ('Ref1', 'in_nucleus', 'yellow_oval'),
+ ('HRE', 'in_nucleus', 'yellow_oval'),
+ ('ARE', 'in_nucleus', 'yellow_oval'),
+ ('AP1', 'in_nucleus', 'yellow_oval'),
+ ('NFkB', 'in_nucleus', 'yellow_oval'),
+ ('Cytokines', 'in_nucleus', 'grey_square'),
+ ('TIGAR', 'in_nucleus', 'grey_square'),
+ ('MDM2', 'in_nucleus', 'grey_square'),
+ ('GST', 'in_nucleus', 'grey_square'),
+ ('EGF', 'in_nucleus', 'grey_square'),
+ ('HIF1a', 'in_nucleus', 'grey_square'),
+ ('VEGF', 'in_nucleus', 'grey_square'),
+ ('TNFR', 'in_nucleus', 'grey_square'),
+ ('EGFR', 'in_nucleus', 'grey_square'),
+ ('PDGF', 'in_nucleus', 'grey_square'),
+ ('TNF', 'in_nucleus', 'grey_square'),
+ ('TRAF', 'in_nucleus', 'grey_square'),
+ ('SOD', 'in_nucleus', 'grey_square'),
+ ('fibronectin', 'in_nucleus', 'grey_square'),),
+
+'Transcription_Factor':
+# protein that binds to specific DNA sequences; control transcription rate
+# in graph, all appear in nucleus
+('STAT', 'p53', 'Ref1', 'NFkB', 'BachNuc', 'NRF2', 'AP1', 'SMAD', 'FOS/JUN'),
+
+'Small_Molecule':
+# often implicated in regulation
+(('Ca++', 'in_cell'),
+ ('PIP3', 'in_cell'),
+ ('ROS', 'in_cell'),
+ ('GSH', 'in_cell'),
+ ('NADPH', 'in_cell'),
+ ('Lactate', 'in_cell'),
+ ('ATP', 'in_cell')),
+
+'Protein':
+(('IFNG', 'exo_cell'),
+ ('EGF', 'exo_cell'),
+ ('PDGF', 'exo_cell'),
+ ('FGF', 'exo_cell'),
+ ('VEGF', 'exo_cell'),
+ ('IGF', 'exo_cell'),
+ ('TNF', 'exo_cell'),
+ ('HMGB1', 'exo_cell'),
+ ('TGFb', 'exo_cell'),
+ ('LTBP', 'exo_cell'),
+ ('Fibronectin', 'exo_cell'),
+ ('IL8', 'exo_cell'),
+ ('ICMT', 'in_ER'),
+ ('BCLXL', 'in_Mito'),
+ ('p21', 'in_nucleus'),
+ ('RB', 'in_nucleus'),
+ ('E2F', 'in_nucleus'),
+ ('MDM2', 'in_nucleus'),
+ ('ERK', 'in_nucleus'),
+ ('MRN', 'in_nucleus'),
+ ('PP2A', 'in_nucleus'),
+ ('ATM', 'in_nucleus'),
+ ('CHK2', 'in_nucleus'),
+ ('HIF1a', 'in_nucleus'),
+ ('Wnt', 'in_cell'),
+ ('JAK', 'in_cell'),
+ ('STAT', 'in_cell'),
+ ('p21', 'in_cell'),
+ ('PKC', 'in_cell'),
+ ('Exocyst_Complex', 'in_cell'),
+ ('PI3K', 'in_cell'),
+ ('AKT', 'in_cell'),
+ ('RAC1', 'in_cell'),
+ ('Periredoxin', 'in_cell'),
+ ('PTEN', 'in_cell'),
+ ('PDK', 'in_cell'),
+ ('RAS', 'in_cell'),
+ ('RAF', 'in_cell'),
+ ('MEK', 'in_cell'),
+ ('ERK', 'in_cell'),
+ ('ATG4', 'in_cell'),
+ ('NOX', 'in_cell'),
+ ('ATM', 'in_cell'),
+ ('LKB1', 'in_cell'),
+ ('AMPK', 'in_cell'),
+ ('TSC2', 'in_cell'),
+ ('mTOR', 'in_cell'),
+ ('S6K', 'in_cell'),
+ ('Caspase_8', 'in_cell'),
+ ('TRAF', 'in_cell'),
+ ('DUSP', 'in_cell'),
+ ('ASK', 'in_cell'),
+ ('JNK', 'in_cell'),
+ ('Thio', 'in_cell'),
+ ('Ref1', 'in_cell'),
+ ('GST', 'in_cell'),
+ ('MDM2', 'in_cell'),
+ ('p53', 'in_cell'),
+ ('NRF2', 'in_cell'),
+ ('NFkB', 'in_cell'),
+ ('AP1', 'in_cell'),
+ ('SMAD', 'in_cell'),
+ ('cIAP-1', 'in_cell),
+ ('Src', 'in_cell),
+ ('RIPK', 'in_cell),
+ ('RhoC', 'in_cell),
+ ('TROP2', 'in_cell),
+ ('SOD', 'in_cell),
+ ('TIGAR', 'in_cell),
+ ('p38MAPK', 'in_cell),)
+},
+
+# Relations schema
+# list of:
+#
+# (( ((<from-entity>, <type>, <location>), <arrow_type>, <line_type>)+ ),
+#  (<to-entity>, <type>, <location>))
+#
+# <from/to-entity> :=
+#   protein: (<name>, 'protein', <location>)
+#   unknown: (<name>, 'unknown', <node-type>)
+#   others:  (<name>, <type>)
+#
+# all arrows appear to represent precedence relations
+# arrow_types:
+#   promotes : means promotes, increases, activates, or necessary for reaction
+#   inhibits
+# line_types: 
+#   line
+#     biochemical reaction between proteins and small_molecules,
+#     promotes/increases/activates or inhibits
+#   dashed
+#     translocates out of nucleus ?
+#   bold-dashed
+#     translocates into nucleus ?
+
+'Relations':
+(
+(((('IFNG', 'Protein', 'exo_cell'), 'promote', 'line'), ),
+ ('IFNGR', 'Receptor')),
+
+(((('ADAM', 'Unknown', 'light_blue_oval'), 'promote', 'line'),
+  (('EGF', 'Unknown', 'grey_square'), 'promote', 'line')), 
+ ('EGF', 'Protein', 'exo_cell')),
+
+(((('EGF', 'Protein', 'exo_cell'), 'promote', 'line'),
+  (('EGFR', 'Unknown', 'grey_square'), 'promote', 'line')), 
+ ('EGFR', 'Receptor')),
+
+(((('PDGF', 'Protein', 'exo_cell'), 'promote', 'line'), 
+  (('PDGF', 'Unknown', 'grey_square'), 'promote', 'line')), 
+ ('PDGFR', 'Receptor')),
+
+(((('FGF', 'Protein', 'exo_cell'), 'promote', 'line'),),
+ ('FGFR', 'Receptor')),
+
+(((('VEGF', 'Unknown', 'grey_square'), 'promote', 'line'),
+  (('Lactate', 'Small_Molecule'), 'promote', 'line')), 
+ ('VEGF', 'Protein', 'exo_cell')),
+
+(((('VEGF', 'Protein', 'exo_cell'), 'promote', 'line'),), 
+ ('VEGFR', 'Receptor')),
+
+(((('IGF', 'Protein', 'exo_cell'), 'promote', 'line'),),
+ ('IGFR', 'Receptor')),
+
+(((('ADAM', 'Unknown', 'light_blue_oval'), 'promote', 'line'),
+  (('TNF', 'Unknown', 'grey_square'), 'promote', 'line'), 
+  (('Acidic_Microenvironment', 'Cancer'), 'inhibit', 'line')), 
+ ('TNF', 'Protein', 'exo_cell')),
+
+(((('TNF', 'Protein', 'exo_cell'), 'promote', 'line'),
+  (('TNFR', 'Unknown', 'grey_square'), 'promote', 'line')),
+ ('TNFR', 'Receptor')),
+
+(((('HMGB1', 'Protein', 'exo_cell'), 'promote', 'line'), ),
+ ('RAGE', 'Receptor')),
+
+(((('TGFb', 'Protein', 'exo_cell'), 'promote', 'line'), ),
+ ('TGFbetaR', 'Receptor')),
+
+(((('LTBP', 'Protein', 'exo_cell'), 'promote', 'line'), ),
+ ('TGFb', 'Protein', 'exo_cell')),
+
+(((('INTEGRINS', 'Unknown', 'orange_square'), 'promote', 'line'), ),
+ ('LTBP', 'Protein')),
+
+(((('Fibronectin', 'Protein', 'exo_cell'), 'promote', 'line'), 
+  (('TROP2', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('RhoC', 'Protein', 'in_cell'), 'promote', 'line')),
+ ('INTEGRINS', 'Unknown', 'orange_square')),
+
+(((('fibronectin', 'Unknown', 'grey_square'), 'promote', 'line'), ),
+ ('Fibronectin', 'Protein', 'exo_cell')),
+
+(((('INTEGRINS', 'Unknown', 'orange_square'), 'promote', 'line'), ),
+ ('Src', 'Protein', 'in_cell')),
+
+(((('TROP2', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('focal_adhesions', 'Unknown', 'orange_oval')),
+
+(((('focal_adhesions', 'Unknown', 'orange_oval'), 'promote', 'line'), ),
+ ('Cell_Cell_Contacts', 'Cell_Process')),
+
+(((('Lactate', 'Small_Molecule'), 'promote', 'line'), ),
+ ('Acidic_Microenvironment', 'Cancer')),
+
+(((('Glycolysis', 'Cell_Process'), 'promote', 'line'), 
+  (('PDK', 'Protein', 'in_cell'), 'promote', 'line')),
+ ('Lactate', 'Small_Molecule')),
+
+(((('TNFR', 'Receptor'), 'promote', 'line'), ),
+ ('RIPK', 'Protein', 'in_cell')),
+
+(((('RIPK', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('Necroptosis', 'Cell_Death')),
+ 
+(((('Necroptosis', 'Cell_Death'), 'promote', 'line'),
+  (('Apoptosis', 'Cell_Death'), 'promote', 'line')),
+ ('Cell_Death', 'Cell_Death')),
+
+(((('TIGAR', 'Protein', 'in_cell'), 'inhibit', 'line'),
+  (('HIF1a', 'Protein', 'in_nucleus'), 'promote', 'dashed')),
+ ('Glycolysis', 'Cell_Process')),
+
+(((('HIF1a', 'Unknown', 'grey_square'), 'promote', 'dashed'), ),
+ ('HIF1a', 'Protein', 'in_nucleus')),
+
+(((('TIGAR', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('Glycolysis', 'Cell_Process'), 'promote', 'line')),
+ ('PPP', 'Call_Process')),
+
+(((('TIGAR', 'Unknown', 'grey_square'), 'promote', 'dashed'), ),
+ ('TIGAR', 'Protein')),
+
+(((('PPP', 'Call_Process'), 'promote', 'line'), ),
+ ('DNA/RNA_synthesis', 'Cell_Process')),
+
+(((('PPP', 'Call_Process'), 'promote', 'line'), ),
+ ('NADPH', 'Small_Molecule')),
+
+(((('NADPH', 'Small_Molecule'), 'promote', 'line'),
+  (('GST', 'Protein', 'in_cell'), 'promote', 'line')),
+ ('GSH', 'Small_Molecule')),
+
+(((('Glycolysis', 'Cell_Process'), 'promote', 'line'), ),
+ ('TCA', 'Cell_Process')),
+
+(((('p38MAPK', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('Cytokines', 'Unknown', 'grey_square'), 'promote', 'line')),
+ ('Immune_Signaling', 'Cell_Process')),
+
+(((('Immune_Signaling', 'Cell_Process'), 'promote', 'line'), ),
+ ('IL8', 'Protein', 'exo_cell')),
+
+(((('OXPHOS', 'Cell_Process'), 'promote', 'line'), ),
+ ('ATP', 'Small_Molecule')),
+
+(((('ATP', 'Small_Molecule'), 'promote', 'line'),
+  (('S6K', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('DNA/RNA_Synthesis', 'Cell_Process'), 'promote', 'line'), ),
+ ('Growth/Protein_Synthesis', 'Cell_Process')),
+
+(((('PDK', 'Protein', 'in_cell'), 'inhibit', 'line'),
+  (('Proliferation', 'Cancer'), 'promote', 'line'),
+  (('TCA', 'Cell_Process'), 'promote', 'line'),
+  (('Growth/Protein_Synthesis', 'Cell_Process'), 'promote', 'line'), ),
+ ('OXPHOS', 'Cell_Process')),
+
+(((('E2F', 'Protein', 'in_nucleus'), 'promote', 'line'),
+  (('AP1', 'Transcription_Factor'), 'promote', 'line'),
+  (('SMAD', 'Transcription_Factor'), 'promote', 'line'),
+  (('FOS/JUN', 'Transcription_Factor'), 'promote', 'line'),
+  (('RNA/DNA_Synthesis', 'Cell_Process'), 'promote', 'line'),
+  (('ATP', 'Small_Molecule'), 'promote', 'line'), ),
+ ('Proliferation', 'Cancer')),
+
+(((('Ref1', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('FOS/JUN', 'Transcription_Factor')),
+
+(((('AP1', 'Protein', 'in_cell'), 'promote', 'bold_dashed'), ),
+ ('AP1', 'Transcription_Factor')),
+
+(((('SMAD', 'Protein', 'in_cell'), 'promote', 'bold_dashed'), ),
+ ('SMAD', 'Transcription_Factor')),
+
+(((('GST', 'Unknown', 'grey_square'), 'promote', 'line'), ),
+ ('GST', 'Protein', 'in_cell')),
+
+(((('NFkB', 'Protein', 'in_cell'), 'promote', 'bold_dashed'), ),
+ ('NFkB', 'Transcription_Factor')),
+
+(((('BachNuc', 'Transcription_Factor'), 'inhibit', 'line'),
+  (('NRF2', 'Transcription_Factor'), 'promote', 'line'), ),
+ ('ARE', 'Unknown', 'yellow_oval')),
+
+(((('NRF2', 'Protein', 'in_cell'), 'promote', 'dashed'), ),
+ ('NRF2', 'Transcription_Factor')),
+
+(((('ROS', 'Small_Molecule'), 'inhibit', 'line'), ),
+ ('BachNuc', 'Transcription_Factor')),
+
+(((('Ref1', 'Protein', 'in_cell'), 'promote', 'bold_dashed'), ),
+ ('Ref1', 'Transcription_Factor')),
+
+(((('SOD', 'Unknown', 'grey_square'), 'promote', 'line'), ),
+ ('SOD', 'Protein', 'in_cell')),
+
+(((('STAT', 'Protein', 'in_cell'), 'promote', 'bold_dashed'), ),
+ ('STAT', 'Transcription_Factor')),
+
+(((('STAT', 'Protein', 'in_cell'), 'inhibit', 'line'),
+  (('SMAD', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('p21', 'Protein', 'in_cell')),
+
+(((('p53', 'Transcription_Factor'), 'promote', 'line'),
+  (('p21', 'Protein', 'in_cell'), 'promote', 'dashed'), ),
+ ('p21', 'Protein', 'in_nucleus')),
+
+(((('p53', 'Transcription_Factor'), 'promote', 'line'), ),
+ ('p53', 'Unknown', 'yellow_oval')),
+
+(((('p53', 'Protein', 'in_cell'), 'promote', 'dashed'),
+  (('MDM2', 'Protein', 'in_nucleus'), 'inhibit', 'line'),
+  (('CHK2', 'Protein', 'in_nucleus'), 'promote', 'line'), ),
+ ('p53', 'Transcription_Factor')),
+
+(((('p21', 'Protein', 'in_nucleus'), 'inhibit', 'line'), ),
+ ('RB', 'Protein', 'in_nucleus')),
+
+(((('RB', 'Protein', 'in_nucleus'), 'inhibit', 'line'), ),
+ ('E2F', 'Protein', 'in_nucleus')),
+
+(((('MDM2', 'Protein', 'in_cell'), 'promote', 'bold_dashed'),
+  (('E2F', 'Protein', 'in_nucleus'), 'inhibit', 'line'), ),
+ ('MDM2', 'Protein', 'in_nucleus')),
+
+(((('AKT', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('MDM2', 'Unknown', 'grey_square'), 'promote', 'dashed'), ),
+ ('MDM2', 'Protein', 'in_cell')),
+
+(((('ATM', 'Protein', 'in_nucleus'), 'promote', 'line'), ),
+ ('CHK2', 'Protein', 'in_nucleus')),
+
+(((('MRN', 'Protein', 'in_nucleus'), 'promote', 'line'),
+  (('PP2A', 'Protein', 'in_nucleus'), 'inhibit', 'line'), ),
+ ('ATM', 'Protein', 'in_nucleus')),
+
+(((('DNA_DSB', 'Cancer'), 'promote', 'line'), ),
+ ('MRN', 'Protein', 'in_nucleus')),
+
+(((('ROS', 'Small_Molecule'), 'promote', 'bold_dashed'), ),
+ ('DNA_DSB', 'Cancer')),
+
+(((('ERK', 'Protein', 'in_cell'), 'promote', 'bold_dashed'), ),
+ ('ERK', 'Protein', 'in_nucleus')),
+
+(((('Autophagy', 'Cancer'), 'promote', 'line'), ),
+ ('Cell_Survival', 'Cell_Process')),
+
+(((('JAK', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('STAT', 'Protein', 'in_cell')),
+
+(((('IFNGR', 'Receptor'), 'promote', 'line'), ),
+ ('JAK', 'Protein', 'in_cell')),
+
+(((('RAGE', 'Receptor'), 'promote', 'line'),
+  (('ATG4', 'Protein', 'in_cell'), 'inhibit', 'line'),
+  (('mTOR', 'Protein', 'in_cell'), 'inhibit', 'line'), ),
+ ('Autophagy', 'Cancer')),
+
+(((('AKT', 'Receptor'), 'promote', 'line'),
+  (('TSC2', 'Protein', 'in_cell'), 'inhibit', 'line'), ),
+ ('mTOR', 'Protein', 'in_cell')),
+
+(((('AMPK', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('TSC2', 'Protein', 'in_cell')),
+
+(((('LKB1', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('AMPK', 'Protein', 'in_cell')),
+
+(((('ATM', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('LKB1', 'Protein', 'in_cell')),
+
+(((('ROS', 'Small_Molecule'), 'promote', 'line'), ),
+ ('ATM', 'Protein', 'in_cell')),
+
+(((('ROS', 'Small_Molecule'), 'inhibit', 'line'), ),
+ ('ATG4', 'Protein', 'in_cell')),
+
+(((('PIP3', 'Small_Molecule'), 'promote', 'line'),
+  (('PDK', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('ICMT', 'Protein', 'ER'), 'inhibit', 'line'), ),
+ ('AKT', 'Protein', 'in_cell')),
+
+(((('PIP3', 'Small_Molecule'), 'promote', 'line'),
+  (('Wnt', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('PDK', 'Protein', 'in_cell')),
+
+(((('PI3K', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('PTEN', 'Protein', 'in_cell'), 'inhibit', 'line'), ),
+ ('PIP3', 'Small_Molecule')),
+
+(((('Exocyst_Complex', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('Exosomes', 'Exosomes')),
+
+(((('RAS', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('Exocyst_Complex', 'Protein', 'in_cell')),
+
+(((('Periredoxin', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('ROS', 'Small_Molecule'), 'inhibit', 'line'), ),
+ ('PTEN', 'Protein', 'in_cell')),
+
+(((('Ca++', 'Small_Molecule'), 'promote', 'line'), ),
+ ('PKC', 'Protein', 'in_cell')),
+
+(((('PKC', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('ADAM', 'Unknown', 'light_blue_oval')),
+
+(((('EGFR', 'Receptor'), 'promote', 'line'),
+  (('FGFR', 'Receptor'), 'promote', 'line'),
+  (('VEGFR', 'Receptor'), 'promote', 'line'),
+  (('IGFR', 'Receptor'), 'promote', 'line'),
+  (('RAGE', 'Receptor'), 'promote', 'line'),
+  (('TGFbetaR', 'Receptor'), 'promote', 'line'),
+  (('Src', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('RAS', 'Protein', 'in_cell')),
+
+(((('RAS', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('RAC1', 'Protein', 'in_cell')),
+
+(((('PKC', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('RAS', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('RAF', 'Protein', 'in_cell')),
+
+(((('RAF', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('MEK', 'Protein', 'in_cell')),
+
+(((('MEK', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('ERK', 'Protein', 'in_cell')),
+
+(((('EGFR', 'Receptor'), 'promote', 'line'),
+  (('PDGFR', 'Receptor'), 'promote', 'line'),
+  (('FGFR', 'Receptor'), 'promote', 'line'),
+  (('VEGFR', 'Receptor'), 'promote', 'line'),
+  (('RAGE', 'Receptor'), 'promote', 'line'),
+  (('RAC1', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('PI3K', 'Protein', 'in_cell')),
+
+(((('IFNGR', 'Receptor'), 'promote', 'line'),
+  (('EGFR', 'Receptor'), 'promote', 'line'),
+  (('PDGFR', 'Receptor'), 'promote', 'line'),
+  (('VEGFR', 'Receptor'), 'promote', 'line'),
+  (('TNFR', 'Receptor'), 'promote', 'line'),
+  (('RAC1', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('NOX', 'Protein', 'in_cell')),
+
+(((('TGFbetaR', 'Receptor'), 'promote', 'line'),
+  (('NOX', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('GSH', 'Small_Molecule'), 'inhibit', 'line'),
+  (('SOD', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('OXPHOS', 'Cell_Process'), 'promote', 'line'), ),
+ ('NOX', 'Protein', 'in_cell')),
+
+(((('TNFR', 'Receptor'), 'promote', 'line'),
+  (('TRAF', 'Unknown', 'grey_square'), 'promote', 'line'), ),
+ ('TRAF', 'Protein', 'in_cell')),
+
+(((('ROS', 'Small_Molecule'), 'inhibit', 'line'), ),
+ ('DUSP', 'Protein', 'in_cell')),
+
+(((('ROS', 'Small_Molecule'), 'promote', 'line'), ),
+ ('Thio', 'Protein', 'in_cell')),
+
+(((('ROS', 'Small_Molecule'), 'promote', 'line'),
+  (('Thio', 'Protein', 'in_cell'), 'inhibit', 'line'), ),
+ ('Ref1', 'Protein', 'in_cell')),
+
+(((('TRAF', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('Thio', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('ASK', 'Protein', 'in_cell')),
+
+(((('ASK', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('TRAF', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('DUSP', 'Protein', 'in_cell'), 'inhibit', 'line'), ),
+ ('JNK', 'Protein', 'in_cell')),
+
+(((('TNFR', 'Receptor'), 'promote', 'line'), ),
+ ('Caspase_8', 'Protein', 'in_cell')),
+
+(((('TNFR', 'Receptor'), 'promote', 'line'), ),
+ ('cIAP-1', 'Protein', 'in_cell')),
+
+(((('TGFbetaR', 'Receptor'), 'promote', 'line'),
+  (('Caspase_8', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('cIAP-1', 'Protein', 'in_cell'), 'inhibit', 'line'),
+  (('TIGAR', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('JNK', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('p21', 'Protein', 'in_cell'), 'inhibit', 'line'),
+  (('NFkB', 'Protein', 'in_cell'), 'inhibit', 'line'),
+  (('BCLXL', 'Protein', 'in_Mito'), 'inhibit', 'line'), ),
+ ('Apoptosis', 'Cell_Process')),
+
+(((('JNK', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('AKT', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('STAT', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('p53', 'Protein', 'in_cell'), 'inhibit', 'line'),
+  (('NFkB', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('BCLXL', 'Protein', 'in_Mito')),
+
+(((('ERK', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('mTOR', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('S6K', 'Protein', 'in_cell')),
+
+(((('TGFbetaR', 'Receptor'), 'promote', 'line'),
+  (('ERK', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('SMAD', 'Protein', 'in_cell')),
+
+(((('REF1', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('NRF2', 'Protein', 'in_cell')),
+
+(((('NFkB', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('p53', 'Protein', 'in_cell')),
+
+(((('Ref1', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('TNFR', 'Receptor'), 'promote', 'line'), ),
+ ('NFkB', 'Protein', 'in_cell')),
+
+(((('Ref1', 'Protein', 'in_cell'), 'promote', 'line'),
+  (('JNK', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('AP1', 'Protein', 'in_cell')),
+
+(((('ASK', 'Protein', 'in_cell'), 'promote', 'line'), ),
+ ('p38MAPk', 'Protein', 'in_cell')),
+
+)
+}
+
