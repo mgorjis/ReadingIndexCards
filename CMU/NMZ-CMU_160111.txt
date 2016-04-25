@@ -1,0 +1,143 @@
+bplist00—_WebMainResource’	
+_WebResourceMIMEType_WebResourceTextEncodingName_WebResourceFrameName^WebResourceURL_WebResourceDataYtext/htmlUutf-8P_file:///index.htmlOCî<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1404.46">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">ROS<span class="Apple-tab-span">	</span>chemidplus<span class="Apple-tab-span">	</span>D017382000</span></p>
+<p class="p1"><span class="s1">Glycolysis<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0006096</span></p>
+<p class="p1"><span class="s1">PPP<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0006098</span></p>
+<p class="p1"><span class="s1">TCAKrebs<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0006099</span></p>
+<p class="p1"><span class="s1">OXPHOS<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0006119</span></p>
+<p class="p1"><span class="s1">Autophagy<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0006914</span></p>
+<p class="p1"><span class="s1">Apoptosis<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0006915</span></p>
+<p class="p1"><span class="s1">CellDeath<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0008219</span></p>
+<p class="p1"><span class="s1">Proliferation<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0008283</span></p>
+<p class="p1"><span class="s1">GrowthPS<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0016049</span></p>
+<p class="p1"><span class="s1">CellCellCon<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0044291</span></p>
+<p class="p1"><span class="s1">FocAd<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0051894</span></p>
+<p class="p1"><span class="s1">DRsyn<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0090592</span></p>
+<p class="p1"><span class="s1">Necroptosis<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>0097528</span></p>
+<p class="p1"><span class="s1">CellSurvival<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>15680329</span></p>
+<p class="p1"><span class="s1">DNAdsb<span class="Apple-tab-span">	</span>go<span class="Apple-tab-span">	</span>1990166</span></p>
+<p class="p1"><span class="s1">GSH<span class="Apple-tab-span">	</span>hmdb<span class="Apple-tab-span">	</span>HMDB00125</span></p>
+<p class="p1"><span class="s1">Lactate<span class="Apple-tab-span">	</span>hmdb<span class="Apple-tab-span">	</span>HMDB00190</span></p>
+<p class="p1"><span class="s1">NADPH<span class="Apple-tab-span">	</span>hmdb<span class="Apple-tab-span">	</span>HMDB00221</span></p>
+<p class="p1"><span class="s1">Ca<span class="Apple-tab-span">	</span>hmdb<span class="Apple-tab-span">	</span>HMDB00464</span></p>
+<p class="p1"><span class="s1">ATP<span class="Apple-tab-span">	</span>hmdb<span class="Apple-tab-span">	</span>HMDB00538</span></p>
+<p class="p1"><span class="s1">PIP3<span class="Apple-tab-span">	</span>hmdb<span class="Apple-tab-span">	</span>HMDB10147</span></p>
+<p class="p1"><span class="s1">Bach1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>O14867</span></p>
+<p class="p1"><span class="s1">PDK1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>O15530</span></p>
+<p class="p1"><span class="s1">ICMT<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>O60725</span></p>
+<p class="p1"><span class="s1">MRN<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>O60934</span></p>
+<p class="p1"><span class="s1">Chk2<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>O96017</span></p>
+<p class="p1"><span class="s1">SOD<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P00441</span></p>
+<p class="p1"><span class="s1">EGFR<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P00533</span></p>
+<p class="p1"><span class="s1">Fos<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P01100</span></p>
+<p class="p1"><span class="s1">KRas<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P01116</span></p>
+<p class="p1"><span class="s1">EGF<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P01133</span></p>
+<p class="p1"><span class="s1">EGF<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P01133</span></p>
+<p class="p1"><span class="s1">EGF<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P01133</span></p>
+<p class="p1"><span class="s1">TGFb1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P01137</span></p>
+<p class="p1"><span class="s1">TNFa<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P01375</span></p>
+<p class="p1"><span class="s1">IFNg<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P01579</span></p>
+<p class="p1"><span class="s1">Fibronectin<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P02751</span></p>
+<p class="p1"><span class="s1">Raf<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P04049</span></p>
+<p class="p1"><span class="s1">PDGF<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P04085</span></p>
+<p class="p1"><span class="s1">Wnt<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P04628</span></p>
+<p class="p1"><span class="s1">p53<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P04637</span></p>
+<p class="p1"><span class="s1">IGF1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P05019</span></p>
+<p class="p1"><span class="s1">FGF1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P05230</span></p>
+<p class="p1"><span class="s1">AP1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P05412</span></p>
+<p class="p1"><span class="s1">Rb<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P06400</span></p>
+<p class="p1"><span class="s1">IGF1R<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P08069</span></p>
+<p class="p1"><span class="s1">RhoC<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P08134</span></p>
+<p class="p1"><span class="s1">GST<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P08263</span></p>
+<p class="p1"><span class="s1">Integrin<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P08648</span></p>
+<p class="p1"><span class="s1">HMGB1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P09429</span></p>
+<p class="p1"><span class="s1">Trop2<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P09758</span></p>
+<p class="p1"><span class="s1">IL8<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P10145</span></p>
+<p class="p1"><span class="s1">Thioredoxin<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P10599</span></p>
+<p class="p1"><span class="s1">FGFR1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P11362</span></p>
+<p class="p1"><span class="s1">Src<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P12931</span></p>
+<p class="p1"><span class="s1">IFNgR<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P15260</span></p>
+<p class="p1"><span class="s1">VEGF<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P15692</span></p>
+<p class="p1"><span class="s1">PDGFR<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P16234</span></p>
+<p class="p1"><span class="s1">PKCa<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P17252</span></p>
+<p class="p1"><span class="s1">VEGFR<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P17948</span></p>
+<p class="p1"><span class="s1">TNFaR<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P19438</span></p>
+<p class="p1"><span class="s1">NFkB<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P19838</span></p>
+<p class="p1"><span class="s1">JAK1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P23458</span></p>
+<p class="p1"><span class="s1">ERK1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P27361</span></p>
+<p class="p1"><span class="s1">Ref1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P27695</span></p>
+<p class="p1"><span class="s1">AKT1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P31749</span></p>
+<p class="p1"><span class="s1">Peroxiredoxin<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P32119</span></p>
+<p class="p1"><span class="s1">TGFbR<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P36897</span></p>
+<p class="p1"><span class="s1">p21<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P38936</span></p>
+<p class="p1"><span class="s1">p21<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P38936</span></p>
+<p class="p1"><span class="s1">STAT1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P42224</span></p>
+<p class="p1"><span class="s1">PI3K<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P42336</span></p>
+<p class="p1"><span class="s1">mTOR<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P42345</span></p>
+<p class="p1"><span class="s1">JNK1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P45983</span></p>
+<p class="p1"><span class="s1">TSC2<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P49815</span></p>
+<p class="p1"><span class="s1">PTEN<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P60484</span></p>
+<p class="p1"><span class="s1">RAC1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P63000</span></p>
+<p class="p1"><span class="s1">PP2A<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P67775</span></p>
+<p class="p1"><span class="s1">ADAM17<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P78536</span></p>
+<p class="p1"><span class="s1">SMAD3<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P84022</span></p>
+<p class="p1"><span class="s1">MDM2<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q00987</span></p>
+<p class="p1"><span class="s1">E2F<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q01094</span></p>
+<p class="p1"><span class="s1">MEK1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q02750</span></p>
+<p class="p1"><span class="s1">BclXL<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q07817</span></p>
+<p class="p1"><span class="s1">TRAF2<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q12933</span></p>
+<p class="p1"><span class="s1">AMPK<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q13131</span></p>
+<p class="p1"><span class="s1">ATM<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q13315</span></p>
+<p class="p1"><span class="s1">cIAP-1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q13490</span></p>
+<p class="p1"><span class="s1">RIPK<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q13546</span></p>
+<p class="p1"><span class="s1">LTBP<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q14766</span></p>
+<p class="p1"><span class="s1">Cas8<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q14790</span></p>
+<p class="p1"><span class="s1">RAGE<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q15109</span></p>
+<p class="p1"><span class="s1">RPS6KA1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q15418</span></p>
+<p class="p1"><span class="s1">LKB1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q15831</span></p>
+<p class="p1"><span class="s1">Nrf2<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q16236</span></p>
+<p class="p1"><span class="s1">p38MAPK<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q16539</span></p>
+<p class="p1"><span class="s1">HIF1a<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q16665</span></p>
+<p class="p1"><span class="s1">ATG4A<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q8WYN0</span></p>
+<p class="p1"><span class="s1">TIGAR<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q9NQ88</span></p>
+<p class="p1"><span class="s1">ExoCx<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q9NV70</span></p>
+<p class="p1"><span class="s1">ASK<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q9UBU7</span></p>
+<p class="p1"><span class="s1">DUSP13<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q9UII6</span></p>
+<p class="p1"><span class="s1">NOx<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q9Y5S8</span></p>
+<p class="p1"><span class="s1">IL2R<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>A2N4P8</span></p>
+<p class="p1"><span class="s1">FOXP3<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>B7ZLG1</span></p>
+<p class="p1"><span class="s1">MKK7<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>O14733</span></p>
+<p class="p1"><span class="s1">TAK1<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>O43318</span></p>
+<p class="p1"><span class="s1">CD25<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P01589</span></p>
+<p class="p1"><span class="s1">TCR<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P04234</span></p>
+<p class="p1"><span class="s1">CD28<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P10747</span></p>
+<p class="p1"><span class="s1">CD122<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P14784</span></p>
+<p class="p1"><span class="s1">CD132<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P31785</span></p>
+<p class="p1"><span class="s1">Mek2<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P36507</span></p>
+<p class="p1"><span class="s1">STAT5<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P42229</span></p>
+<p class="p1"><span class="s1">JAK3<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P52333</span></p>
+<p class="p1"><span class="s1">PTEN<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P60484</span></p>
+<p class="p1"><span class="s1">IL-2<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P60568</span></p>
+<p class="p1"><span class="s1">pS6<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P62753</span></p>
+<p class="p1"><span class="s1">SMAD3<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>P84022</span></p>
+<p class="p1"><span class="s1">PKCTHETA<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q04759</span></p>
+<p class="p1"><span class="s1">NFAT<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q13469</span></p>
+<p class="p1"><span class="s1">RHEB<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q15382</span></p>
+<p class="p1"><span class="s1">TSC<span class="Apple-tab-span">	</span>uniprot<span class="Apple-tab-span">	</span>Q99576</span></p>
+</body>
+</html>
+    ( > \ s Ç î û § • ∫                           DR
