@@ -1,0 +1,429 @@
+// The CMU pathway graph re-sketched
+digraph {
+	ADAM17
+	AKT1
+	AMPK
+	AP1
+	ARE
+	ASK
+	ATG4A
+	ATM
+	ATM
+	ATP
+	Bach1
+	BclXL
+	Cas8
+	CDN2A
+	Chk2
+	"cIAP-1"
+	DUSP13
+	E2F
+	EGF
+	EGF
+	EGF
+	EGFR
+	EGFR
+	EGFR
+	EGFR
+	ERK1
+	ERK1
+	ExoCx
+	Exosomes
+	FGF1
+	FGFR1
+	FGFR1
+	Fibronectin
+	Fibronectin
+	Fibronectin
+	FocAd
+	Fos
+	GSH
+	GLUT1
+	GLUT1
+	GLUT1
+	GST
+	GST
+	GST
+	HIF1a
+	HIF1a
+	HIF1a
+	HIF1a
+	HRE
+	HMGB1
+	HMGB1
+	HMGB1
+	ICMT
+	IFNg
+	IFNg
+	IFNgR
+	IFNgR
+	IGF1
+	IGF1R
+	IGF1R
+	IL1B
+	IL1B
+	IL1B
+	IL1R1
+	IL1R1
+	IL6R
+	IL6R
+	IL6
+	Integrin
+	JAK1
+	JNK1
+	JNK1
+	Lactate
+	LKB1
+	LTBP
+	MDM2
+	MDM2
+	MDM2
+	MDM2
+	MEK1
+	MRN
+	mTOR
+	NADPH
+	NFkB
+	NFkB
+	NOx
+	Nrf2
+	Nrf2
+	p21
+	p21
+	p38MAPK
+	p53cyto
+	p53nuc
+	PDGF
+	PDGF
+	PDGF
+	PDGFR
+	PDGFR
+	PDPK1
+	PDK1
+	Peroxiredoxin
+	PI3K
+	PIP3
+	PKCa
+	PP2A
+	PTEN
+	RAC1
+	Raf
+	RAGE
+	RAGE
+	KRas
+	Rb
+	Ref1
+	Ref1
+	RhoC
+	RIPK
+	ROS
+	ROSh2o2
+	ROSox
+	ROSsox
+	RPS6KA1
+	SMAD3
+	SMAD3
+	SOD
+	SOD
+	SOD
+	Src
+	STAT1
+	STAT1
+	STAT3
+	STAT3
+	TGFb1
+	TGFbR
+	TGFbR
+	TIGAR
+	TIGAR
+	TIGAR
+	TNFa
+	TNFa
+	TNFa
+	TNFaR
+	TNFaR
+	TNFaR
+	TNFaR
+	TRAF2
+	TRAF2
+	TRAF2
+	Trop2
+	TSC2
+	Thioredoxin
+	VEGF
+	VEGF
+	VEGF
+	VEGFR
+	VEGFR
+	Wnt
+	AcidicME
+	Apoptosis
+	Autophagy
+	CellCellCon
+	CellDeath
+	CellSurvival
+	DNAdsb
+	DRsyn
+	Glycolysis
+	GrowthPS
+	Necroptosis
+	OXPHOS
+	PPP
+		PKCa -> ADAM17
+		PDPK1 -> AKT1
+		ICMT -> AKT1
+		LKB1 -> AMPK
+		Fos -> AP1
+		JNK1nuc -> AP1
+		Ref1nuc -> AP1
+		Nrf2nuc -> ARE
+		Bach1 -> ARE
+		Thi -> ASK
+		edoxin -> ASK
+		TRAFcyto -> ASK
+		ROS -> ATG4A
+		ROS -> ATM
+		ATMcyto -> ATM
+		MRN -> ATM
+		PP2A -> ATM
+		OXPHOS -> ATP
+		ROS -> Bach1
+		NFkBcyto -> BclXL
+		STAT1cyto -> BclXL
+		AKT1 -> BclXL
+		JNK1cyto -> BclXL
+		p53cyto -> BclXL
+		TNFaRact -> Cas8
+		MEK -> CDN2A
+		ATMnuc -> Chk2
+		TNFaRact -> "cIAP-1"
+		ROS -> DUSP13
+		Rb -> E2F
+		EGFrna -> EGF
+		EGFgene -> EGF
+		AP1 -> EGF
+		EGFRpm -> EGFR
+		EGFex -> EGFR
+		EGFRgene -> EGFR
+		EGFRrna -> EGFR
+		NFkBnuc -> EGFR
+		MEK1 -> ERK1
+		ERK1cyto -> ERK1
+		Ras -> ExoCx
+		ExoCx -> Exosomes
+		FGF1 -> FGFR1
+		FGF1 -> FGFR1
+		FGFR1pm -> FGFR1
+		Fibronectinrna -> Fibronectin
+		Fibronectingene -> Fibronectin
+		NFkBnuc -> Fibronectin
+		Trop2 -> FocAd
+		ERK1nuc -> Fos
+		NADPH -> GSH
+		GSTcyto -> GSH
+		HIF1anuc -> GLUT1
+		GLUT1gene -> GLUT1
+		GLUT1rna -> GLUT1
+		GSTrna -> GST
+		GSTgene -> GST
+		ARE -> GST
+		HIF1arna -> HIF1a
+		HIF1acyto -> HIF1a
+		HIF1agene -> HIF1a
+		Ref1nuc -> HIF1a
+		HIF1anuc -> HRE
+		Necrosis -> HMGB1
+		HMGB1cyto -> HMGB1
+		HMGB1nuc -> HMGB1
+		ROS -> HMGB1
+		HMGB1nuc -> HMGB1
+		ROS -> HMGB1
+		STAT1nuc -> IFNg
+		IFNGgene -> IFNg
+		MAC -> IFNg
+		IFNg -> IFNgR
+		IFNgRpm -> IFNgR
+		IGF1 -> IGF1R
+		IGF1Rpm -> IGF1R
+		p38MAPK -> IL1B
+		IL1Bgene -> IL1B
+		IL1Brna -> IL1B
+		IL1B -> IL1R1
+		IL1R1pm -> IL1R1
+		IL6ex -> IL6R
+		IL6Rpm -> IL6R
+		IL6gene -> IL6
+		MAC -> IL6
+		Fibronectinex -> Integrin
+		RhoC -> Integrin
+		Trop2 -> Integrin
+		IFNgRact -> JAK1
+		IL1Ract -> JAK1
+		TRAFcyto -> JNK1
+		ASK -> JNK1
+		DUSP13 -> JNK1
+		JNK1cyto -> JNK1
+		Glycolysis -> Lactate
+		PDK1 -> Lactate
+		ATMcyto -> LKB1
+		Integrin -> LTBP
+		AKT1 -> MDM2
+		MDM2rna -> MDM2
+		MDM2cyto -> MDM2
+		E2F -> MDM2
+		MDM2gene -> MDM2
+		p53nuc -> MDM2
+		Raf -> MEK1
+		DNAdsb -> MRN
+		AKT1 -> mTOR
+		TSC2 -> mTOR
+		PPP -> NADPH
+		TNFaRact -> NFkB
+		Ref1cyto -> NFkB
+		"IL-1" -> NFkB
+		NFkBcyto -> NFkB
+		RAC1 -> NOx
+		TNFaRact -> NOx
+		VEGFRact -> NOx
+		PDGFRact -> NOx
+		EGFRact -> NOx
+		IFNgRact -> NOx
+		Ref1cyto -> Nrf2
+		Nrf2cyto -> Nrf2
+		SMAD3cyto -> p21
+		STAT1cyto -> p21
+		p21cyto -> p21
+		p53nuc -> p21
+		ASK -> p38MAPK
+		NFkBcyto -> p53cyto
+		p53cyto -> p53nuc
+		Chk2 -> p53nuc
+		MDM2nuc -> p53nuc
+		PDGFrna -> PDGF
+		PDGFgene -> PDGF
+		NFkBnuc -> PDGF
+		PDGFex -> PDGFR
+		PDGFRpm -> PDGFR
+		PIP3 -> PDPK1
+		Wnt -> PDK1
+		FGFR1act -> PI3K
+		RAGEact -> PI3K
+		VEGFRact -> PI3K
+		PDGFRact -> PI3K
+		EGFRact -> PI3K
+		PI3K -> PIP3
+		PTEN -> PIP3
+		Peroxiredoxin -> PTEN
+		ROS -> PTEN
+		PI3K -> RAC1
+		Ras -> Raf
+		HMGB1 -> RAGE
+		RAGEpm -> RAGE
+		Src -> KRas
+		IGF1Ract -> KRas
+		FGFR1act -> KRas
+		RAGEact -> KRas
+		VEGFRact -> KRas
+		TGFB1Ract -> KRas
+		EGFRact -> KRas
+		CDN2A -> Rb
+		p21 -> Rb
+		ROS -> Ref1
+		Thi -> Ref1
+		edoxin -> Ref1
+		Ref1cyto -> Ref1
+		TNFaRact -> RIPK
+		OXPHOS -> ROS
+		NOx -> ROS
+		TGFb1Ract -> ROS
+		INGR2act -> ROS
+		MAC -> ROS
+		GSH -> ROS
+		SODcyto -> ROS
+		OXPHOS -> ROSh2o2
+		NOx -> ROSh2o2
+		GSH -> ROSh2o2
+		SOD -> ROSh2o2
+		OXPHOS -> ROSox
+		NOx -> ROSox
+		GSH -> ROSox
+		SOD -> ROSox
+		OXPHOS -> ROSsox
+		NOx -> ROSsox
+		GSH -> ROSsox
+		SOD -> ROSsox
+		mTOR -> RPS6KA1
+		ERK1cyto -> RPS6KA1
+		PDPK1 -> RPS6KA1
+		TGFb1Ract -> SMAD3
+		ERK1cyto -> SMAD3
+		PDPK1 -> SMAD3
+		SMAD3cyto -> SMAD3
+		SODrna -> SOD
+		SODgene -> SOD
+		NFkBnuc -> SOD
+		Integrins -> Src
+		STAT1cyto -> STAT1
+		JAK1 -> STAT1
+		STAT3cyto -> STAT3
+		IL6Ract -> STAT3
+		LTBP -> TGFb1
+		TGFb1 -> TGFbR
+		TGFb1Rpm -> TGFbR
+		TIGARrna -> TIGAR
+		TIGARgene -> TIGAR
+		p53nuc -> TIGAR
+		TNFarna -> TNFa
+		ADAM -> TNFa
+		TNFAgene -> TNFa
+		MAC -> TNFa
+		AcidicME -> TNFa
+		TNFagene -> TNFa
+		NFkBnuc -> TNFa
+		TNFaRrna -> TNFaR
+		TNFaex -> TNFaR
+		TNFaRpm -> TNFaR
+		TNFaRgene -> TNFaR
+		NFkBnuc -> TNFaR
+		TRAFrna -> TRAF2
+		TNFaRact -> TRAF2
+		TRAFgene -> TRAF2
+		NFkBnuc -> TRAF2
+		AMPK -> TSC2
+		ROS -> Thioredoxin
+		VEGFrna -> VEGF
+		Lactate -> VEGF
+		VEGFgene -> VEGF
+		HIF1anuc -> VEGF
+		VEGFex -> VEGFR
+		VEGFRpm -> VEGFR
+		Lactate -> AcidicME
+		Cas8 -> Apoptosis
+		JNK1cyto -> Apoptosis
+		TGFb1Ract -> Apoptosis
+		STAT1nuc -> Apoptosis
+		BclXL -> Apoptosis
+		"cIAP-1" -> Apoptosis
+		NFkBcytoTIGARcyto -> Apoptosis
+		STAT3nuc -> Apoptosis
+		HMGB1 -> Autophagy
+		mTOR -> Autophagy
+		ATG4A -> Autophagy
+		FocAd -> CellCellCon
+		Apoptosis -> CellDeath
+		Necroptosis -> CellDeath
+		Autophagy -> CellSurvival
+		ROS -> DNAdsb
+		PPP -> DRsyn
+		HIF1acyto -> Glycolysis
+		TIGARcyto -> Glycolysis
+		DRsyn -> GrowthPS
+		ATP -> GrowthPS
+		RPS6KA1 -> GrowthPS
+		p21nuc -> GrowthPS
+		RIPK -> Necroptosis
+		TCAKrebs -> OXPHOS
+		PDK1 -> OXPHOS
+		Glycolysis -> PPP
+		TIGARcyto -> PPP
+}
