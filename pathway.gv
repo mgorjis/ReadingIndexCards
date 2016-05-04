@@ -1,0 +1,431 @@
+// The CMU pathway graph re-sketched
+digraph {
+	ADAM17
+	AKT1
+	AMPK
+	AP1
+	ARE
+	ASK
+	ATG4A
+	ATM
+	ATM
+	ATP
+	Bach1
+	BclXL
+	Cas8
+	CDN2A
+	Chk2
+	"cIAP-1"
+	DUSP13
+	E2F
+	EGF
+	EGF
+	EGF
+	EGFR
+	EGFR
+	EGFR
+	EGFR
+	ERK1
+	ERK1
+	ExoCx
+	Exosomes
+	FGF1
+	FGFR1
+	FGFR1
+	Fibronectin
+	Fibronectin
+	Fibronectin
+	FocAd
+	Fos
+	GSH
+	GLUT1
+	GLUT1
+	GLUT1
+	GST
+	GST
+	GST
+	HIF1a
+	HIF1a
+	HIF1a
+	HIF1a
+	HRE
+	HMGB1
+	HMGB1
+	HMGB1
+	ICMT
+	IFNg
+	IFNg
+	IFNgR
+	IFNgR
+	IGF1
+	IGF1R
+	IGF1R
+	IL1B
+	IL1B
+	IL1B
+	IL1R1
+	IL1R1
+	IL6R
+	IL6R
+	IL6
+	Integrin
+	JAK1
+	JNK1
+	JNK1
+	Lactate
+	LKB1
+	LTBP
+	MDM2
+	MDM2
+	MDM2
+	MDM2
+	MEK1
+	MRN
+	mTOR
+	NADPH
+	NFkB
+	NFkB
+	NOx
+	Nrf2
+	Nrf2
+	p21
+	p21
+	p38MAPK
+	p53cyto
+	p53nuc
+	PDGF
+	PDGF
+	PDGF
+	PDGFR
+	PDGFR
+	PDPK1
+	PDK1
+	Peroxiredoxin
+	PI3K
+	PIP3
+	PKCa
+	PP2A
+	PTEN
+	RAC1
+	Raf
+	RAGE
+	RAGE
+	KRas
+	Rb
+	Ref1
+	Ref1
+	RhoC
+	RIPK
+	ROS
+	ROSh2o2
+	ROSox
+	ROSsox
+	RPS6KA1
+	SMAD3
+	SMAD3
+	SOD
+	SOD
+	SOD
+	Src
+	STAT1
+	STAT1
+	STAT3
+	STAT3
+	TGFb1
+	TGFbR
+	TGFbR
+	TIGAR
+	TIGAR
+	TIGAR
+	TNFa
+	TNFa
+	TNFa
+	TNFaR
+	TNFaR
+	TNFaR
+	TNFaR
+	TRAF2
+	TRAF2
+	TRAF2
+	Trop2
+	TSC2
+	Thioredoxin
+	VEGF
+	VEGF
+	VEGF
+	VEGFR
+	VEGFR
+	Wnt
+	AcidicME
+	Apoptosis
+	Autophagy
+	CellCellCon
+	CellDeath
+	CellSurvival
+	DNAdsb
+	DRsyn
+	Glycolysis
+	GrowthPS
+	Necroptosis
+	OXPHOS
+	PPP
+	Proliferation
+		PKCa -> ADAM17 [color=crimson]
+		PDPK1 -> AKT1 [color=crimson]
+		ICMT -> AKT1 [color=blue]
+		LKB1 -> AMPK [color=crimson]
+		Fos -> AP1 [color=crimson]
+		JNK1nuc -> AP1 [color=crimson]
+		Ref1nuc -> AP1 [color=crimson]
+		Nrf2nuc -> ARE [color=crimson]
+		Bach1 -> ARE [color=blue]
+		Thioredoxin -> ASK [color=crimson]
+		TRAFcyto -> ASK [color=crimson]
+		ROS -> ATG4A [color=blue]
+		ROS -> ATM [color=crimson]
+		ATMcyto -> ATM [color=crimson]
+		MRN -> ATM [color=crimson]
+		PP2A -> ATM [color=blue]
+		OXPHOS -> ATP [color=crimson]
+		ROS -> Bach1 [color=blue]
+		NFkBcyto -> BclXL [color=crimson]
+		STAT1cyto -> BclXL [color=crimson]
+		AKT1 -> BclXL [color=crimson]
+		JNK1cyto -> BclXL [color=crimson]
+		p53cyto -> BclXL [color=blue]
+		TNFaRact -> Cas8 [color=crimson]
+		MEK -> CDN2A [color=crimson]
+		ATMnuc -> Chk2 [color=crimson]
+		TNFaRact -> "cIAP-1" [color=crimson]
+		ROS -> DUSP13 [color=blue]
+		Rb -> E2F [color=blue]
+		EGFrna -> EGF [color=crimson]
+		EGFgene -> EGF [color=crimson]
+		AP1 -> EGF [color=crimson]
+		EGFRpm -> EGFR [color=crimson]
+		EGFex -> EGFR [color=crimson]
+		EGFRgene -> EGFR [color=crimson]
+		EGFRrna -> EGFR [color=crimson]
+		NFkBnuc -> EGFR [color=crimson]
+		MEK1 -> ERK1 [color=crimson]
+		ERK1cyto -> ERK1 [color=crimson]
+		Ras -> ExoCx [color=crimson]
+		ExoCx -> Exosomes [color=crimson]
+		FGF1 -> FGFR1 [color=crimson]
+		FGF1 -> FGFR1 [color=crimson]
+		FGFR1pm -> FGFR1 [color=crimson]
+		Fibronectinrna -> Fibronectin [color=crimson]
+		Fibronectingene -> Fibronectin [color=crimson]
+		NFkBnuc -> Fibronectin [color=crimson]
+		Trop2 -> FocAd [color=crimson]
+		ERK1nuc -> Fos [color=crimson]
+		NADPH -> GSH [color=crimson]
+		GSTcyto -> GSH [color=crimson]
+		HIF1anuc -> GLUT1 [color=crimson]
+		GLUT1gene -> GLUT1 [color=crimson]
+		GLUT1rna -> GLUT1 [color=crimson]
+		GSTrna -> GST [color=crimson]
+		GSTgene -> GST [color=crimson]
+		ARE -> GST [color=crimson]
+		HIF1arna -> HIF1a [color=crimson]
+		HIF1acyto -> HIF1a [color=crimson]
+		HIF1agene -> HIF1a [color=crimson]
+		Ref1nuc -> HIF1a [color=crimson]
+		HIF1anuc -> HRE [color=crimson]
+		Necrosis -> HMGB1 [color=crimson]
+		HMGB1cyto -> HMGB1 [color=crimson]
+		HMGB1nuc -> HMGB1 [color=crimson]
+		ROS -> HMGB1 [color=crimson]
+		HMGB1nuc -> HMGB1 [color=crimson]
+		ROS -> HMGB1 [color=blue]
+		STAT1nuc -> IFNg [color=crimson]
+		IFNGgene -> IFNg [color=crimson]
+		IFNg -> IFNgR [color=crimson]
+		IFNgRpm -> IFNgR [color=crimson]
+		IGF1 -> IGF1R [color=crimson]
+		IGF1Rpm -> IGF1R [color=crimson]
+		p38MAPK -> IL1B [color=crimson]
+		IL1Bgene -> IL1B [color=crimson]
+		IL1Brna -> IL1B [color=crimson]
+		IL1B -> IL1R1 [color=crimson]
+		IL1R1pm -> IL1R1 [color=crimson]
+		IL6ex -> IL6R [color=crimson]
+		IL6Rpm -> IL6R [color=crimson]
+		IL6gene -> IL6 [color=crimson]
+		Fibronectinex -> Integrin [color=crimson]
+		RhoC -> Integrin [color=crimson]
+		Trop2 -> Integrin [color=crimson]
+		IFNgRact -> JAK1 [color=crimson]
+		IL1Ract -> JAK1 [color=crimson]
+		TRAFcyto -> JNK1 [color=crimson]
+		ASK -> JNK1 [color=crimson]
+		DUSP13 -> JNK1 [color=blue]
+		JNK1cyto -> JNK1 [color=crimson]
+		Glycolysis -> Lactate [color=crimson]
+		PDK1 -> Lactate [color=crimson]
+		ATMcyto -> LKB1 [color=crimson]
+		Integrin -> LTBP [color=crimson]
+		AKT1 -> MDM2 [color=crimson]
+		MDM2rna -> MDM2 [color=crimson]
+		MDM2cyto -> MDM2 [color=crimson]
+		E2F -> MDM2 [color=blue]
+		MDM2gene -> MDM2 [color=crimson]
+		p53nuc -> MDM2 [color=crimson]
+		Raf -> MEK1 [color=crimson]
+		DNAdsb -> MRN [color=crimson]
+		AKT1 -> mTOR [color=crimson]
+		TSC2 -> mTOR [color=blue]
+		PPP -> NADPH [color=crimson]
+		TNFaRact -> NFkB [color=crimson]
+		Ref1cyto -> NFkB [color=crimson]
+		"IL-1" -> NFkB [color=crimson]
+		NFkBcyto -> NFkB [color=crimson]
+		RAC1 -> NOx [color=crimson]
+		TNFaRact -> NOx [color=crimson]
+		VEGFRact -> NOx [color=crimson]
+		PDGFRact -> NOx [color=crimson]
+		EGFRact -> NOx [color=crimson]
+		IFNgRact -> NOx [color=crimson]
+		Ref1cyto -> Nrf2 [color=crimson]
+		Nrf2cyto -> Nrf2 [color=crimson]
+		SMAD3cyto -> p21 [color=crimson]
+		STAT1cyto -> p21 [color=crimson]
+		p21cyto -> p21 [color=crimson]
+		p53nuc -> p21 [color=crimson]
+		ASK -> p38MAPK [color=crimson]
+		NFkBcyto -> p53cyto [color=crimson]
+		p53cyto -> p53nuc [color=crimson]
+		Chk2 -> p53nuc [color=crimson]
+		MDM2nuc -> p53nuc [color=blue]
+		PDGFrna -> PDGF [color=crimson]
+		PDGFgene -> PDGF [color=crimson]
+		NFkBnuc -> PDGF [color=crimson]
+		PDGFex -> PDGFR [color=crimson]
+		PDGFRpm -> PDGFR [color=crimson]
+		PIP3 -> PDPK1 [color=crimson]
+		Wnt -> PDK1 [color=crimson]
+		FGFR1act -> PI3K [color=crimson]
+		RAGEact -> PI3K [color=crimson]
+		VEGFRact -> PI3K [color=crimson]
+		PDGFRact -> PI3K [color=crimson]
+		EGFRact -> PI3K [color=crimson]
+		PI3K -> PIP3 [color=crimson]
+		PTEN -> PIP3 [color=blue]
+		Peroxiredoxin -> PTEN [color=crimson]
+		ROS -> PTEN [color=blue]
+		PI3K -> RAC1 [color=crimson]
+		Ras -> Raf [color=crimson]
+		HMGB1 -> RAGE [color=crimson]
+		RAGEpm -> RAGE [color=crimson]
+		Src -> KRas [color=crimson]
+		IGF1Ract -> KRas [color=crimson]
+		FGFR1act -> KRas [color=crimson]
+		RAGEact -> KRas [color=crimson]
+		VEGFRact -> KRas [color=crimson]
+		TGFB1Ract -> KRas [color=crimson]
+		EGFRact -> KRas [color=crimson]
+		CDN2A -> Rb [color=crimson]
+		p21 -> Rb [color=blue]
+		ROS -> Ref1 [color=crimson]
+		Thioredoxin -> Ref1 [color=blue]
+		Ref1cyto -> Ref1 [color=crimson]
+		TNFaRact -> RIPK [color=crimson]
+		OXPHOS -> ROS [color=crimson]
+		NOx -> ROS [color=crimson]
+		TGFb1Ract -> ROS [color=crimson]
+		INGR2act -> ROS [color=crimson]
+		GSH -> ROS [color=blue]
+		SODcyto -> ROS [color=blue]
+		OXPHOS -> ROSh2o2 [color=crimson]
+		NOx -> ROSh2o2 [color=crimson]
+		GSH -> ROSh2o2 [color=blue]
+		SOD -> ROSh2o2 [color=blue]
+		OXPHOS -> ROSox [color=crimson]
+		NOx -> ROSox [color=crimson]
+		GSH -> ROSox [color=blue]
+		SOD -> ROSox [color=blue]
+		OXPHOS -> ROSsox [color=crimson]
+		NOx -> ROSsox [color=crimson]
+		GSH -> ROSsox [color=blue]
+		SOD -> ROSsox [color=blue]
+		mTOR -> RPS6KA1 [color=crimson]
+		ERK1cyto -> RPS6KA1 [color=crimson]
+		PDPK1 -> RPS6KA1 [color=crimson]
+		TGFb1Ract -> SMAD3 [color=crimson]
+		ERK1cyto -> SMAD3 [color=blue]
+		PDPK1 -> SMAD3 [color=blue]
+		SMAD3cyto -> SMAD3 [color=crimson]
+		SODrna -> SOD [color=crimson]
+		SODgene -> SOD [color=crimson]
+		NFkBnuc -> SOD [color=crimson]
+		Integrins -> Src [color=crimson]
+		STAT1cyto -> STAT1 [color=crimson]
+		JAK1 -> STAT1 [color=crimson]
+		STAT3cyto -> STAT3 [color=crimson]
+		IL6Ract -> STAT3 [color=crimson]
+		LTBP -> TGFb1 [color=crimson]
+		TGFb1 -> TGFbR [color=crimson]
+		TGFb1Rpm -> TGFbR [color=crimson]
+		TIGARrna -> TIGAR [color=crimson]
+		TIGARgene -> TIGAR [color=crimson]
+		p53nuc -> TIGAR [color=crimson]
+		TNFarna -> TNFa [color=crimson]
+		ADAM -> TNFa [color=crimson]
+		TNFAgene -> TNFa [color=crimson]
+		AcidicME -> TNFa [color=blue]
+		TNFagene -> TNFa [color=crimson]
+		NFkBnuc -> TNFa [color=crimson]
+		TNFaRrna -> TNFaR [color=crimson]
+		TNFaex -> TNFaR [color=crimson]
+		TNFaRpm -> TNFaR [color=crimson]
+		TNFaRgene -> TNFaR [color=crimson]
+		NFkBnuc -> TNFaR [color=crimson]
+		TRAFrna -> TRAF2 [color=crimson]
+		TNFaRact -> TRAF2 [color=crimson]
+		TRAFgene -> TRAF2 [color=crimson]
+		NFkBnuc -> TRAF2 [color=crimson]
+		AMPK -> TSC2 [color=crimson]
+		ROS -> Thioredoxin [color=crimson]
+		VEGFrna -> VEGF [color=crimson]
+		Lactate -> VEGF [color=crimson]
+		VEGFgene -> VEGF [color=crimson]
+		HIF1anuc -> VEGF [color=crimson]
+		VEGFex -> VEGFR [color=crimson]
+		VEGFRpm -> VEGFR [color=crimson]
+		Lactate -> AcidicME [color=crimson]
+		Cas8 -> Apoptosis [color=crimson]
+		JNK1cyto -> Apoptosis [color=crimson]
+		TGFb1Ract -> Apoptosis [color=crimson]
+		STAT1nuc -> Apoptosis [color=crimson]
+		BclXL -> Apoptosis [color=blue]
+		"cIAP-1" -> Apoptosis [color=blue]
+		NFkBcyto -> Apoptosis [color=blue]
+		TIGARcyto -> Apoptosis [color=blue]
+		STAT3nuc -> Apoptosis [color=blue]
+		HMGB1 -> Autophagy [color=crimson]
+		mTOR -> Autophagy [color=blue]
+		ATG4A -> Autophagy [color=blue]
+		FocAd -> CellCellCon [color=crimson]
+		Apoptosis -> CellDeath [color=crimson]
+		Necroptosis -> CellDeath [color=crimson]
+		Autophagy -> CellSurvival [color=crimson]
+		ROS -> DNAdsb [color=crimson]
+		PPP -> DRsyn [color=crimson]
+		HIF1acyto -> Glycolysis [color=crimson]
+		TIGARcyto -> Glycolysis [color=blue]
+		DRsyn -> GrowthPS [color=crimson]
+		ATP -> GrowthPS [color=crimson]
+		RPS6KA1 -> GrowthPS [color=crimson]
+		p21nuc -> GrowthPS [color=blue]
+		RIPK -> Necroptosis [color=crimson]
+		TCAKrebs -> OXPHOS [color=crimson]
+		PDK1 -> OXPHOS [color=blue]
+		Glycolysis -> PPP [color=crimson]
+		TIGARcyto -> PPP [color=crimson]
+		E2F -> Proliferation [color=crimson]
+		AP1 -> Proliferation [color=crimson]
+		DRsyn -> Proliferation [color=crimson]
+		ATP -> Proliferation [color=crimson]
+		STAT3nuc -> Proliferation [color=crimson]
+		SMAD3nuc -> Proliferation [color=blue]
+}
